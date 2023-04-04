@@ -1,1 +1,23 @@
-<app-escena [frases]="frase"></app-escena>
+<!-- <div *ngIf="mostrarFrases">
+    <h3>Bienvenida!</h3>
+    <button (click)="mostrar()">Empezar</button>
+</div>
+
+<ng-template *ngIf="!mostrarFrases">
+    <app-escena [frases]="frase"></app-escena>
+</ng-template> -->
+
+<div class="container p-5 m-5 text-center">
+    <div class="row d-flex align-items-center">
+        <div *ngIf="mostrarFrases, else noMostrar" class="col">
+            <h1 class="pt-5">BENVINGUTS y BENVINGUDES</h1>
+            <h5 class="pt-3 pb-5">Fes clic al botó i viu una apassionant aventura...</h5>
+            <button class="border border-5 border-secondary rounded-pill fs-5 fw-bold text-center p-3 w-50"
+                (click)="mostrar()">Començar!</button>
+        </div>
+    </div>
+</div>
+
+<ng-template #noMostrar>
+    <app-escena [frases]="frase"></app-escena>
+</ng-template>
