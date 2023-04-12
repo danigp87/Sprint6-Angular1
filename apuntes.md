@@ -1,3 +1,25 @@
+--------- SUBIR A GIT ---------
+->  git add . (agrega todos los archivos de la carpeta)
+->  git commit -m "Agregamos el index.html" (agrega mensaje y "hace la foto"/guarda)
+->  git push
+
+En el TERMINAL de Visual Studio Code, estando en la carpeta correspondiente:
+git init (sólo una vez por carpeta)
+git status -s (ver el estado de los archivos)
+git add index.html (añade el archivo a git)
+
+Hacer cada vez que se quiera guardar todo:
+git add .
+cada commit guarda todo, hace la foto; con el texto añadido sabes por dónde vas
+
+para cargar un anterior:
+git log --oneline (para ver la lista de guardados)
+git reset --hard 01e7136 (el número de guardado)
+
+creas el repository en github
+copiamos el: git remote add origin http://...... y lo copiamos en la terminal, dentro de la carpeta
+hacemos lo mismo con: git push -u origin master (en el terminal puede pedirnos nombre y contraseña de github)
+
 -----CREAR PROYECTO ANGULAR-----
 npm install -g @angular/cli
 ng new my-first-project
