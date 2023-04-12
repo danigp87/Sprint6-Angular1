@@ -4,7 +4,7 @@
 <!-- <div class="container-fluid bg-image" [style.background-image]="'url(src/assets/1.jpg)'"> -->
 <!-- <div class="container-fluid bg-image" [style.background-image]="'url({{frase.img}})'"> -->
 
-<div class="container-fluid bgImgCover" [ngStyle]="{'background-image': 'url(./assets/'+ (currentPosition + 1) +'.jpg)'}">
+<div class="bgImgCover" [ngStyle]="{'background-image': 'url(./assets/'+ (currentPosition + 1) +'.jpg)'}">
     <div class="row pb-5 pt-5">
         <div class="col">
             <button (click)="prev()"

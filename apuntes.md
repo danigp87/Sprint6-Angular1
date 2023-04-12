@@ -352,3 +352,7 @@ cliente.direccion = 'C/ Del Desarrollo Web .com';
 cliente.creado = new Date(Date.now());
 
 ---------------------------------------------------------------------------------------------------------------
+
+Bootstrap 5
+ GUTTER = Padding entre columnas
+ Container, container-fluid, cols, rows... Tienen un padding automático, así que con g-0 lo dejamos en 0
